@@ -1,6 +1,6 @@
-# Yopu Assistant
+# 有谱么助手
 
-Yopu Assistant 是一个为 [yopu.co](https://yopu.co) 网站定制的用户脚本（Userscript），旨在增强网页的查看体验。目前主要功能是为曲谱查看页面添加“全屏”切换功能。
+有谱么助手 是一个为 [yopu.co](https://yopu.co) 网站定制的用户脚本（Userscript），旨在增强网页的查看体验。目前主要功能是为曲谱查看页面添加“全屏”切换功能。
 
 ## 🚀 主要功能
 
