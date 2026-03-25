@@ -17,14 +17,21 @@
 
 ## 📦 安装
 
-1.  确保您的浏览器已安装 [Tampermonkey](https://www.tampermonkey.net/) 或其他用户脚本管理器。
-2.  克隆或下载本项目。
-3.  运行以下命令进行构建：
-    ```bash
-    pnpm install
-    pnpm build
-    ```
-4.  构建完成后，在 `dist/` 目录下找到生成的 `.user.js` 文件，将其拖入浏览器安装。
+### 方式一：直接安装（推荐）
+
+1. 确保您的浏览器已安装 [Tampermonkey](https://www.tampermonkey.net/) 或其他用户脚本管理器。
+2. 点击下方链接进入 GreasyFork 页面进行安装：
+   👉 **[安装 有谱么助手](https://greasyfork.org/zh-CN/scripts/571133-%E6%9C%89%E8%B0%B1%E4%B9%88%E5%8A%A9%E6%89%8B)**
+
+### 方式二：通过源码构建
+
+1. 克隆或下载本项目。
+2. 运行以下命令进行构建：
+   ```bash
+   pnpm install
+   pnpm build
+   ```
+3. 构建完成后，在 `dist/` 目录下找到生成的 `.user.js` 文件，将其拖入浏览器安装。
 
 ## 👨‍💻 开发
 
