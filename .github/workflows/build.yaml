@@ -1,0 +1,36 @@
+name: Build
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js 环境
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      - name: 安装依赖
+        run: npm ci
+
+      - name: 构建项目
+        run: npm run build
+
+      - name: 打包构建产物并创建 Release
+        uses: softprops/action-gh-release@v1
+        with:
+          # 指定要上传的文件，支持通配符
+          files: |
+            dist/**
+          # 可选：自动生成 Release 说明
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
