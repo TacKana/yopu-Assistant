@@ -17,6 +17,7 @@ export default defineConfig({
         description: "有谱么助手，为 有谱么 添加一些功能，如全屏看谱。",
         license: "MIT",
         source: "https://github.com/TacKana/yopu-Assistant",
+        grant: ['unsafeWindow'],
       },
     }),
   ],
