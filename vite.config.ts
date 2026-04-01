@@ -19,6 +19,9 @@ export default defineConfig({
         source: "https://github.com/TacKana/yopu-Assistant",
         grant: ['unsafeWindow'],
       },
+      build: {
+        fileName: 'script.user.js',
+      }
     }),
   ],
 });
