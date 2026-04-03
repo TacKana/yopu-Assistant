@@ -5,9 +5,9 @@
 
 // 配置与选择器
 const SELECTORS = {
-  BUTTON_CONTAINER: '#c > div > div.layout.no-print.svelte-bbufvt.nier > div.main.svelte-bbufvt > div.panel.svelte-uqhx9v > div.player-panel.svelte-uqhx9v > div.buttons.svelte-uqhx9v',
-  SIDE_BAR: '#c > div > div.layout.no-print.svelte-bbufvt.nier > div.side.svelte-bbufvt',
-  PAGE_LAYOUT: '#c > div > div.layout.no-print.svelte-bbufvt.nier',
+  BUTTON_CONTAINER: '.buttons', // 按钮容器
+  SIDE_BAR: '.side', // 侧边栏
+  PAGE_LAYOUT: '.layout', // 页面布局
 };
 
 // 状态管理
